@@ -1,8 +1,8 @@
 <template>
   <q-layout view="lHh Lpr lFf">
-    <v-app>
+    <q-page-container>
       <router-view />
-    </v-app>
+    </q-page-container>
   </q-layout>
 </template>
 
