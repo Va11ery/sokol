@@ -1,23 +1,6 @@
 <template>
   <div class="fill-height container">
     <div class="title-3vw ptb-100">Контакты</div>
-
-    <v-list lines="one">
-      <v-list-item
-        v-for="item in items"
-        :value="item"
-        :key="item.title"
-        class="list-item"
-        @click="openLink(item.link)"
-      >
-        <v-list-item-title class="list-title">
-          {{ item.title }}
-        </v-list-item-title>
-        <v-list-item-subtitle class="list-subtitle">
-          {{ item.text }}
-        </v-list-item-subtitle>
-      </v-list-item>
-    </v-list>
   </div>
 </template>
 

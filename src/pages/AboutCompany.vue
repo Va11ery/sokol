@@ -6,16 +6,10 @@
       <div class="title-3vw ptb-100 text-white">Лицензии</div>
 
       <n-image-group>
-        <n-space>
-          <n-image width="500" :src="Lic_1" />
-          <n-image width="500" :src="Lic_2" />
-        </n-space>
+        <n-space> </n-space>
       </n-image-group>
     </div>
   </div>
 </template>
 
-<script lang="ts" setup>
-import Lic_1 from 'assets/lic_1.png';
-import Lic_2 from 'assets/lic_2.png';
-</script>
+<script lang="ts" setup></script>

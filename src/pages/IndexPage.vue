@@ -9,13 +9,6 @@
 </template>
 
 <script lang="ts" setup>
-// import Lic_1 from 'assets/lic_1.png';
-// import Lic_2 from 'assets/lic_2.png';
-
-// import CardImg from 'assets/cards_img_3.svg';
-// import Camera2 from 'assets/camera_2.jpg';
-// import fon from 'assets/fon.jpg';
-// import delko from 'assets/delko.png';
 import { YandexMap, YandexMarker } from 'vue-yandex-maps';
 const coordinates = [59.877543, 30.335739];
 const controls = ['fullscreenControl'];
