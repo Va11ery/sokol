@@ -14,24 +14,16 @@
     </q-btn>
 
     <template v-slot:append>
-      <v-list density="compact" bg-color="#3C435C" class="d-flex text-white">
-        <v-list-item
-          class="ms-1"
-          v-for="(item, i) in items"
-          :key="i"
-          :value="item"
-          link
-          rounded
+      <q-list bordered padding class="flex">
+        <q-item
+          v-for="item in items"
+          :key="item.link"
           :to="{ name: item.link }"
+          exact
         >
-          <!--        <template v-slot:prepend>-->
-          <!--          <v-icon :icon="item.icon"></v-icon>-->
-          <!--        </template>-->
-
-          <v-list-item-title>{{ item.text }}</v-list-item-title>
-        </v-list-item>
-      </v-list>
-      <!-- <v-app-bar-nav-icon></v-app-bar-nav-icon> -->
+          <q-item-section>{{ item.text }}</q-item-section>
+        </q-item>
+      </q-list>
     </template>
   </v-app-bar>
 </template>
