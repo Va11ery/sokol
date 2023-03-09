@@ -7,7 +7,4 @@
   </q-layout>
 </template>
 
-<script lang="ts" setup>
-import DefaultBar from './AppBar.vue';
-import TheFooter from './TheFooter.vue';
-</script>
+<script lang="ts" setup></script>
