@@ -1,11 +1,9 @@
 <template>
-  <v-app>
-    <default-bar />
-
-    <router-view />
-
-    <the-footer />
-  </v-app>
+  <q-layout view="lHh Lpr lFf">
+    <v-app>
+      <router-view />
+    </v-app>
+  </q-layout>
 </template>
 
 <script lang="ts" setup>
