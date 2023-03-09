@@ -94,7 +94,7 @@
               >Оставить заявку</v-btn
             >
           </v-col>
-          <v-col>
+          <!-- <v-col>
             <v-carousel hide-delimiters>
               <v-carousel-item>
                 <div class="list-column">
@@ -133,15 +133,15 @@
                 </div>
               </v-carousel-item>
             </v-carousel>
-          </v-col>
+          </v-col> -->
         </v-row>
-        <div class="company__title ptb-100 pl-1 text-center">Лицензии</div>
+        <!-- <div class="company__title ptb-100 pl-1 text-center">Лицензии</div>
         <n-image-group>
           <n-space justify="center">
             <n-image width="500" :src="Lic_1" />
             <n-image width="500" :src="Lic_2" />
           </n-space>
-        </n-image-group>
+        </n-image-group> -->
       </div>
     </div>
 
