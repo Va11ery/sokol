@@ -154,13 +154,14 @@
 </template>
 
 <script lang="ts" setup>
-import Lic_1 from 'assets/lic_1.png';
-import Lic_2 from 'assets/lic_2.png';
+// import Lic_1 from 'assets/lic_1.png';
+// import Lic_2 from 'assets/lic_2.png';
+
+// import CardImg from 'assets/cards_img_3.svg';
+// import Camera2 from 'assets/camera_2.jpg';
+// import fon from 'assets/fon.jpg';
+// import delko from 'assets/delko.png';
 import { YandexMap, YandexMarker } from 'vue-yandex-maps';
-import CardImg from 'assets/cards_img_3.svg';
-import Camera2 from 'assets/camera_2.jpg';
-import fon from 'assets/fon.jpg';
-import delko from 'assets/delko.png';
 const coordinates = [59.877543, 30.335739];
 const controls = ['fullscreenControl'];
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -168,32 +169,26 @@ const cards = [
   {
     title: 'Охрана объектов',
     text: 'Охрана недвижимости, строительных объектов, промышленных объектов',
-    img: fon,
   },
   {
     title: 'Сопровождение грузов',
     text: 'Ж/д способом, автомобилем, самолетом, сопровождение фур',
-    img: CardImg,
   },
   {
     title: 'Личная охрана',
     text: 'Явная личная охрана, скрытая личная охрана, телохранители',
-    img: CardImg,
   },
   {
     title: 'Охрана мероприятий',
     text: 'Внешняя охрана, внутренняя охрана, комплексная охрана',
-    img: Camera2,
   },
   {
     title: 'Почасовая охрана',
     text: 'Охрана объекта на сутки, охрана объекта на день: на ночь',
-    img: CardImg,
   },
   {
     title: 'Перевозка лекарственных и психотропных веществ',
     text: 'Охранная организация имеет лицензию на перевозку лекарственных средств и психотропных веществ',
-    img: CardImg,
   },
 ];
 </script>
