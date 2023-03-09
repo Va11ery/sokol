@@ -14,7 +14,8 @@
     </q-btn>
 
     <template v-slot:append>
-      <q-list bordered padding class="flex">
+      <q-btn @click.prevent="$router.push({ name: 'about' })">about</q-btn>
+      <!-- <q-list bordered padding class="flex">
         <q-item
           v-for="item in items"
           :key="item.link"
@@ -23,7 +24,7 @@
         >
           <q-item-section>{{ item.text }}</q-item-section>
         </q-item>
-      </q-list>
+      </q-list> -->
     </template>
   </v-app-bar>
 </template>

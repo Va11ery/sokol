@@ -243,6 +243,7 @@ const cards = [
   font-size: 28px;
 }
 .main-security {
+  background-image: url('assets/main_png.png');
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
