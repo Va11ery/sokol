@@ -1,10 +1,7 @@
 <template>
   <div class="fill-height container">
-     <div class="title-3vw  ptb-100"> Клиенты</div>
-
+    <div class="title-3vw ptb-100">Клиенты</div>
   </div>
 </template>
 
-<script lang="ts" setup>
-
-</script>
+<script lang="ts" setup></script>
