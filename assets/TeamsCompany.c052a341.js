@@ -1,0 +1,1 @@
+import{_ as e,a0 as t,aF as s,aG as a}from"./index.b1839742.js";const c={},o={class:"fill-height container"},n=a("div",{class:"title-3vw ptb-100"},"\u041A\u043E\u043C\u0430\u043D\u0434\u0430",-1),_=[n];function r(i,d){return t(),s("div",o,_)}var f=e(c,[["render",r]]);export{f as default};
