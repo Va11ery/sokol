@@ -6,7 +6,7 @@
       @click.prevent="$router.push({ name: 'home' })"
     >
       <v-avatar size="65px">
-        <v-img alt="Avatar" :src="logo"></v-img>
+        <v-img alt="Avatar" src=""></v-img>
       </v-avatar>
       <v-app-bar-title class="app-bar-title d-flex align-center">
         <div>ОО Сокол</div>
@@ -14,7 +14,7 @@
     </q-btn>
 
     <template v-slot:append>
-      <q-list bordered padding class="flex">
+      <!-- <q-list bordered padding class="flex">
         <q-item
           v-for="item in items"
           :key="item.link"
@@ -23,13 +23,12 @@
         >
           <q-item-section>{{ item.text }}</q-item-section>
         </q-item>
-      </q-list>
+      </q-list> -->
     </template>
   </v-app-bar>
 </template>
 
 <script lang="ts" setup>
-import logo from 'assets/logo.png';
 const items = [
   { text: 'О компании', icon: 'mdi-clock', link: 'about' },
   { text: 'Услуги', icon: 'mdi-account', link: 'service' },
