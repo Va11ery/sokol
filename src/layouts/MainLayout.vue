@@ -1,13 +1,15 @@
 <template>
-  <q-layout view="lHh Lpr lFf">
-    <q-btn @click.prevent="$router.push({ name: 'about' })">about</q-btn>
-    <v-btn>dsadsa</v-btn>
-    <q-page-container>
+  <v-app>
+    <default-bar />
+    <v-main style="min-height: calc(100vh)">
       <router-view />
-    </q-page-container>
-  </q-layout>
+    </v-main>
+
+    <the-footer />
+  </v-app>
 </template>
 
-<script setup lang="ts">
-import { ref } from 'vue';
+<script lang="ts" setup>
+import DefaultBar from './AppBar.vue';
+import TheFooter from './TheFooter.vue';
 </script>
