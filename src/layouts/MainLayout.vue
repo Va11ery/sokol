@@ -1,6 +1,7 @@
 <template>
   <q-layout view="lHh Lpr lFf">
     <q-btn @click.prevent="$router.push({ name: 'about' })">about</q-btn>
+    <v-btn>dsadsa</v-btn>
     <q-page-container>
       <router-view />
     </q-page-container>
