@@ -1,9 +1,8 @@
 <template>
   <v-app>
     <default-bar />
-    <v-main style="min-height: calc(100vh)">
-      <router-view />
-    </v-main>
+
+    <router-view />
 
     <the-footer />
   </v-app>
