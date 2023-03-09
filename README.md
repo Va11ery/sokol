@@ -1,57 +1,41 @@
-# essentials
+# Quasar App (sokol)
 
-## Project setup
+A Quasar Project
 
-```
-# yarn
+## Install the dependencies
+```bash
 yarn
-
-# npm
+# or
 npm install
-
-# pnpm
-pnpm install
 ```
 
-### Compiles and hot-reloads for development
-
-```
-# yarn
-yarn dev
-
-# npm
-npm run dev
-
-# pnpm
-pnpm dev
+### Start the app in development mode (hot-code reloading, error reporting, etc.)
+```bash
+quasar dev
 ```
 
-### Compiles and minifies for production
 
-```
-# yarn
-yarn build
-
-# npm
-npm run build
-
-# pnpm
-pnpm build
-```
-
-### Lints and fixes files
-
-```
-# yarn
+### Lint the files
+```bash
 yarn lint
-
-# npm
+# or
 npm run lint
-
-# pnpm
-pnpm lint
 ```
 
-### Customize configuration
 
-See [Configuration Reference](https://vitejs.dev/config/).
+### Format the files
+```bash
+yarn format
+# or
+npm run format
+```
+
+
+
+### Build the app for production
+```bash
+quasar build
+```
+
+### Customize the configuration
+See [Configuring quasar.config.js](https://v2.quasar.dev/quasar-cli-vite/quasar-config-js).
