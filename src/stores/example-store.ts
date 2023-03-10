@@ -1,15 +1,12 @@
 import { defineStore } from 'pinia';
 
-export const useCounterStore = defineStore('counter', {
+export const useLayoutStore = defineStore('layout', {
   state: () => ({
-    counter: 0,
+    drawer: false,
   }),
-  getters: {
-    doubleCount: (state) => state.counter * 2,
-  },
   actions: {
-    increment() {
-      this.counter++;
+    setDrawer() {
+      this.drawer = !this.drawer;
     },
   },
 });
