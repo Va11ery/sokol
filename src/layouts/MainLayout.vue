@@ -1,6 +1,7 @@
 <template>
-  <q-layout view="lHh Lpr lFf">
+  <q-layout view="lHh lpr lFf">
     <AppBar />
+
     <n-drawer v-model:show="store.drawer" style="background-color: #3c435c">
       <n-drawer-content
         header-style="color: white"
@@ -20,17 +21,15 @@
           <q-item class="q-mb-sm" clickable v-ripple to="/clients" exact>
             <q-item-section>Клиенты</q-item-section>
           </q-item>
-          <q-item class="q-mb-sm" clickable v-ripple to="/teams" exact>
-            <q-item-section>Команда</q-item-section>
-          </q-item>
           <q-item class="q-mb-sm" clickable v-ripple to="/contacts" exact>
             <q-item-section>Контакты</q-item-section>
           </q-item>
         </q-list>
       </n-drawer-content>
     </n-drawer>
-    <q-page-container>
-      <q-page style="min-height: 100vh">
+
+    <q-page-container style="padding-bottom: 0; background: #3c435c">
+      <q-page>
         <router-view />
       </q-page>
     </q-page-container>
@@ -45,6 +44,7 @@ import TheFooter from './TheFooter.vue';
 import { useLayoutStore } from 'stores/example-store';
 import { NDrawer, NDrawerContent } from 'naive-ui';
 const store = useLayoutStore();
-
-const drawerLeft = ref(false);
+const layoutScrollbarProps = {
+  containerClass: 'document-scroll-container',
+};
 </script>

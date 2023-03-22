@@ -15,6 +15,7 @@
             class="text-white"
             style="font-size: 36px; font-weight: 600"
             outline
+            href="mailto:op.sokol@bk.ru"
             >Оставить заявку
           </q-btn>
         </div>
@@ -92,7 +93,11 @@
             <div class="q-mt-md" style="padding-left: 5px">
               С какими компаниями мы работаем
             </div>
-            <q-btn color="red" size="large" class="q-mt-md"
+            <q-btn
+              color="red"
+              size="large"
+              class="q-mt-md"
+              href="mailto:op.sokol@bk.ru"
               >Оставить заявку</q-btn
             >
           </div>

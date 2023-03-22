@@ -13,6 +13,7 @@
     "test": "echo \"No test specified\" && exit 0"
   },
   "dependencies": {
+    "@fortawesome/vue-fontawesome": "^3.0.3",
     "@quasar/extras": "^1.0.0",
     "@types/yandex-maps": "^2.1.29",
     "naive-ui": "^2.34.3",

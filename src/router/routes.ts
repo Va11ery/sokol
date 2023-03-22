@@ -15,12 +15,32 @@ const routes: RouteRecordRaw[] = [
         name: 'about',
         component: () =>
           import(/* webpackChunkName: "home" */ 'pages/AboutCompany.vue'),
+
       },
       {
-        path: 'service',
-        name: 'service',
-        component: () =>
-          import(/* webpackChunkName: "home" */ 'pages/ServiceCompany.vue'),
+        path: 'services',
+        children: [
+          {
+            path: 'objects',
+            component: () => import('pages/ServiceComp.vue'),
+            name: 'objects',
+          },
+          {
+            path: 'cargo',
+            component: () => import('src/pages/ServiceComp.vue'),
+            name: 'cargo',
+          },
+          {
+            path: 'personal',
+            component: () => import('src/pages/ServiceComp.vue'),
+            name: 'personal',
+          },
+          {
+            path: 'events',
+            component: () => import('src/pages/ServiceComp.vue'),
+            name: 'events',
+          },
+        ],
       },
       {
         path: 'clients',

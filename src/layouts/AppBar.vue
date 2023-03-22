@@ -23,11 +23,46 @@
           v-for="item in items"
           :key="item.link"
           :to="{ name: item.link }"
+          active-class=" text-grey-6"
           exact
         >
           <q-item-section>{{ item.text }}</q-item-section>
         </q-item>
       </q-list>
+      <q-tabs
+        v-model="tab"
+        shrink
+        indicator-color="transparent"
+        active-color="yellow"
+        class="adaptive-header"
+      >
+        <q-route-tab exact label="Услуги">
+          <q-menu transition-show="jump-down" transition-hide="jump-up">
+            <q-list>
+              <q-item clickable v-ripple :to="{ name: 'objects' }" exact>
+                <q-item-section class="item-label"
+                  >Охрана объектов</q-item-section
+                >
+              </q-item>
+              <q-item clickable to="/services/cargo" exact>
+                <q-item-section class="item-label"
+                  >Сопровождение грузов</q-item-section
+                >
+              </q-item>
+              <q-item clickable to="/services/personal" exact>
+                <q-item-section class="item-label"
+                  >Личная охрана</q-item-section
+                >
+              </q-item>
+              <q-item clickable to="/services/events" exact>
+                <q-item-section class="item-label"
+                  >Охрана мероприятий</q-item-section
+                >
+              </q-item>
+            </q-list>
+          </q-menu></q-route-tab
+        >
+      </q-tabs>
       <q-btn
         flat
         @click="store.setDrawer()"
@@ -42,19 +77,19 @@
 <script lang="ts" setup>
 import logo from 'assets/logo.png';
 import { useLayoutStore } from 'stores/example-store';
+import { ref } from 'vue';
 const store = useLayoutStore();
+const tab = ref('');
 const items = [
   { text: 'О компании', icon: 'mdi-clock', link: 'about' },
-  { text: 'Услуги', icon: 'mdi-account', link: 'service' },
   { text: 'Клиенты', icon: 'mdi-flag', link: 'clients' },
-  { text: 'Команда', icon: 'mdi-flag', link: 'teams' },
   { text: 'Контакты', icon: 'mdi-flag', link: 'contacts' },
 ];
 </script>
 <style lang="scss" scoped>
 .item {
-  font-weight: 400;
-  font-size: 1rem;
+  font-weight: 500 !important;
+  font-size: 1.1rem;
   line-height: 1.5rem;
 }
 .app-bar-title {
@@ -84,7 +119,5 @@ const items = [
       display: block;
     }
   }
-}
-.menu-list .my-menu-link {
 }
 </style>
