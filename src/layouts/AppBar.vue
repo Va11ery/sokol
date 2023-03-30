@@ -34,7 +34,7 @@
         shrink
         indicator-color="transparent"
         active-color="yellow"
-        class="adaptive-header"
+        class="adaptive-header menu-list"
       >
         <q-route-tab exact label="Услуги">
           <q-menu transition-show="jump-down" transition-hide="jump-up">
