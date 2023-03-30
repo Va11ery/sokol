@@ -18,9 +18,6 @@
           <q-item class="q-mb-sm" clickable v-ripple to="/service" exact>
             <q-item-section>Услуги</q-item-section>
           </q-item>
-          <q-item class="q-mb-sm" clickable v-ripple to="/clients" exact>
-            <q-item-section>Клиенты</q-item-section>
-          </q-item>
           <q-item class="q-mb-sm" clickable v-ripple to="/contacts" exact>
             <q-item-section>Контакты</q-item-section>
           </q-item>

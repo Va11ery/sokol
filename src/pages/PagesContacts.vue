@@ -3,16 +3,18 @@
     <div class="title-3vw ptb-100 text-white">Контакты</div>
 
     <q-list padding class="rounded-borders">
-      <q-item class="q-pb-xl" v-for="i in items" :key="i.title">
-        <q-item-section>
-          <q-item-label class="item-label q-pb-sm text-white">{{
-            i.title
-          }}</q-item-label>
-          <q-item-label class="item-caption text-orange" caption>
-            {{ i.text }}
-          </q-item-label></q-item-section
-        >
-      </q-item>
+      <div v-for="i in items" :key="i.title" class="q-mb-xl">
+        <q-item class="" clickable :href="i.link">
+          <q-item-section>
+            <q-item-label class="item-label q-pb-sm text-white">{{
+              i.title
+            }}</q-item-label>
+            <q-item-label class="item-caption text-orange" caption>
+              {{ i.text }}
+            </q-item-label></q-item-section
+          >
+        </q-item>
+      </div>
     </q-list>
   </div>
 </template>
@@ -22,6 +24,7 @@ const items = [
   {
     title: 'Санкт-Петербург',
     text: '+7 812 224 25 77',
+    link: 'tel:+78122242577',
   },
   {
     title: 'Адрес',
@@ -31,13 +34,9 @@ const items = [
   {
     title: 'Почта',
     text: 'op.sokol@bk.ru',
+    link: 'mailto:op.sokol@bk.ru',
   },
 ];
-const openLink = (link: any) => {
-  if (link) {
-    window.open(link);
-  }
-};
 </script>
 
 <style lang="scss" scoped>

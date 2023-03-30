@@ -82,7 +82,6 @@ const store = useLayoutStore();
 const tab = ref('');
 const items = [
   { text: 'О компании', icon: 'mdi-clock', link: 'about' },
-  { text: 'Клиенты', icon: 'mdi-flag', link: 'clients' },
   { text: 'Контакты', icon: 'mdi-flag', link: 'contacts' },
 ];
 </script>
