@@ -36,7 +36,7 @@
       </q-card-section>
 
       <q-card-actions class="q-pa-md">
-        <q-btn outline color="secondary" style="width: 300px" size="lg">
+        <q-btn outline color="secondary"  href="mailto:op.sokol@bk.ru" style="width: 300px" size="lg">
           Оставить заявку
         </q-btn>
       </q-card-actions>

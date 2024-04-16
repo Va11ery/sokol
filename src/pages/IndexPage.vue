@@ -110,8 +110,7 @@
               animated
               padding
               control-color="primary"
-              arrows
-              height="300px"
+              height="500px"
               class="bg-grey-1 shadow-2 rounded-borders"
             >
               <q-carousel-slide :name="1" class="list-column">
@@ -119,24 +118,10 @@
                   <q-img fit="contain" class="" :src="delko"> </q-img>
                 </div>
                 <div class="list-column__field">
-                  <q-img fit="contain" class="" :src="delko"> </q-img>
+                  <q-img fit="contain" class="" :src="part_1"> </q-img>
                 </div>
                 <div class="list-column__field">
-                  <q-img fit="contain" class="" :src="delko"> </q-img>
-                </div>
-                <div class="list-column__field">
-                  <q-img fit="contain" class="" :src="delko"> </q-img>
-                </div>
-              </q-carousel-slide>
-              <q-carousel-slide :name="2" class="list-column">
-                <div class="list-column__field">
-                  <q-img fit="contain" class="" :src="delko"> </q-img>
-                </div>
-                <div class="list-column__field">
-                  <q-img fit="contain" class="" :src="delko"> </q-img>
-                </div>
-                <div class="list-column__field">
-                  <q-img fit="contain" class="" :src="delko"> </q-img>
+                  <q-img fit="contain" class="" :src="part_2"> </q-img>
                 </div>
                 <div class="list-column__field">
                   <q-img fit="contain" class="" :src="delko"> </q-img>
@@ -172,6 +157,8 @@ import CardImg from 'assets/cards_img_3.svg';
 import Camera2 from 'assets/camera_2.jpg';
 import fon from 'assets/fon.jpg';
 import delko from 'assets/delko.png';
+import part_1 from 'assets/part_1.jpg';
+import part_2 from 'assets/part_2.jpg';
 import { YandexMap, YandexMarker } from 'vue-yandex-maps';
 const coordinates = [59.877543, 30.335739];
 const controls = ['fullscreenControl'];

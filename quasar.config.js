@@ -61,7 +61,7 @@ module.exports = configure(function (/* ctx */) {
 
       // rebuildCache: true, // rebuilds Vite/linter/etc cache on startup
 
-      publicPath: '/sokol/',
+      publicPath: '',
       // analyze: true,
       // env: {},
       // rawDefine: {}
@@ -108,7 +108,7 @@ module.exports = configure(function (/* ctx */) {
       // directives: [],
 
       // Quasar plugins
-      plugins: [],
+      plugins: ['Meta'],
     },
 
     // animations: 'all', // --- includes all animations

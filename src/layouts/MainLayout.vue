@@ -58,13 +58,12 @@
 
 <script lang="ts" setup>
 import { ref } from 'vue';
+
 import AppBar from './AppBar.vue';
 import TheFooter from './TheFooter.vue';
 import { useLayoutStore } from 'stores/example-store';
 import { NDrawer, NDrawerContent } from 'naive-ui';
 const store = useLayoutStore();
-const layoutScrollbarProps = {
-  containerClass: 'document-scroll-container',
-};
+
 const tab = ref('');
 </script>
