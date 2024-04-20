@@ -28,8 +28,7 @@ const items = [
   },
   {
     title: 'Адрес',
-    text: 'Сызранская улица, 16',
-    link: 'https://yandex.ru/maps/2/saint-petersburg/?from=api-maps&ll=30.335739%2C59.877543&mode=routes&origin=jsapi_2_1_79&rtext=~59.877543%2C30.335739&rtt=auto&ruri=~ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NzQ0MjQ2MRJQ0KDQvtGB0YHQuNGPLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KHRi9C30YDQsNC90YHQutCw0Y8g0YPQu9C40YbQsCwgMTYiCg2Wr%2FJBFZuCb0I%3D&z=18',
+    text: ' Адрес: 195248, город Санкт-Петербург, вн.тер. г. Муниципальный Округ Большая Охта, ул Большая Пороховская, дом 61, литера А, помещение 1-Н Ч.ПОМЕЩ. 2',
   },
   {
     title: 'Почта',
