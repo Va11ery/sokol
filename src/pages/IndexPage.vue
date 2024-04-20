@@ -130,20 +130,7 @@
             </q-carousel>
           </div>
         </div>
-        <div class="company__title ptb-100 pl-1 text-center">Лицензии</div>
-        <n-image-group>
-          <n-space justify="center">
-            <n-image object-fit="cover" width="300" :src="Lic_1" />
-            <n-image object-fit="cover" width="300" :src="Lic_2" />
-          </n-space>
-        </n-image-group>
       </div>
-    </div>
-
-    <div style="background: #f5f5f5">
-      <YandexMap :coordinates="coordinates" :controls="controls" :zoom="18">
-        <YandexMarker :coordinates="coordinates" :marker-id="123" />
-      </YandexMap>
     </div>
   </div>
 </template>

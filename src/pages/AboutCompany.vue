@@ -11,17 +11,6 @@
         индивидуальный подход к каждому клиенту и действует на основании
         законодательства РФ.
       </div>
-
-      <div class="title-3vw ptb-100 text-white">Лицензии</div>
-
-      <div class="q-pb-xl">
-        <n-image-group>
-          <n-space>
-            <n-image width="500" :src="Lic_1" />
-            <n-image width="500" :src="Lic_2" />
-          </n-space>
-        </n-image-group>
-      </div>
     </div>
   </div>
 </template>
