@@ -87,6 +87,99 @@
 
     <div style="background: #f5f5f5" class="ptb-100">
       <div class="fill-height container">
+        <div class="why-me ptb-100 text-center">Отчет оценки труда</div>
+        <q-carousel
+          transition-prev="slide-right"
+          transition-next="slide-left"
+          swipeable
+          animated
+          control-color="amber"
+          navigation
+          padding
+          arrows
+          height="300px"
+          class="bg-grey-9 shadow-2 rounded-borders"
+          v-model="slideCarusel"
+          v-model:fullscreen="fullscreen"
+        >
+          <q-carousel-slide :name="1" class="column no-wrap">
+            <div
+              class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap"
+            >
+              <q-img
+                fit="contain"
+                class="rounded-borders col-6 full-height"
+                :src="sout_1"
+              >
+              </q-img>
+
+              <q-img
+                fit="contain"
+                class="rounded-borders col-6 full-height"
+                :src="sout_2"
+              >
+              </q-img>
+            </div>
+          </q-carousel-slide>
+
+          <q-carousel-slide :name="2" class="column no-wrap">
+            <div
+              class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap"
+            >
+              <q-img
+                fit="contain"
+                class="rounded-borders col-6 full-height"
+                :src="sout_3"
+              >
+              </q-img>
+
+              <q-img
+                fit="contain"
+                class="rounded-borders col-6 full-height"
+                :src="sout_4"
+              >
+              </q-img>
+            </div>
+          </q-carousel-slide>
+
+          <q-carousel-slide :name="3" class="column no-wrap">
+            <div
+              class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap"
+            >
+              <q-img
+                fit="contain"
+                class="rounded-borders col-6 full-height"
+                :src="sout_5"
+              >
+              </q-img>
+
+              <q-img
+                fit="contain"
+                class="rounded-borders col-6 full-height"
+                :src="sout_6"
+              >
+              </q-img>
+            </div>
+          </q-carousel-slide>
+          <template v-slot:control>
+            <q-carousel-control position="bottom-right" :offset="[18, 18]">
+              <q-btn
+                push
+                round
+                dense
+                color="white"
+                text-color="primary"
+                :icon="fullscreen ? 'fullscreen_exit' : 'fullscreen'"
+                @click="fullscreen = !fullscreen"
+              />
+            </q-carousel-control>
+          </template>
+        </q-carousel>
+      </div>
+    </div>
+
+    <div style="background: #f5f5f5" class="ptb-100">
+      <div class="fill-height container">
         <div class="row">
           <div class="col col-xs-12 col-sm-6 col-md-6 col-lg-6">
             <div class="company__title">Партнеры</div>
@@ -146,11 +239,21 @@ import fon from 'assets/fon.jpg';
 import delko from 'assets/delko.png';
 import part_1 from 'assets/part_1.jpg';
 import part_2 from 'assets/part_2.jpg';
+import sout_1 from 'assets/sout/1.jpg';
+import sout_2 from 'assets/sout/2.jpg';
+import sout_3 from 'assets/sout/3.jpg';
+import sout_4 from 'assets/sout/4.jpg';
+import sout_5 from 'assets/sout/5.jpg';
+import sout_6 from 'assets/sout/6.jpg';
 import { YandexMap, YandexMarker } from 'vue-yandex-maps';
+
 const coordinates = [59.877543, 30.335739];
 const controls = ['fullscreenControl'];
 const slide = ref(1);
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
+
+const fullscreen = ref(false);
+const slideCarusel = ref(1);
 const cards = [
   {
     title: 'Охрана объектов',
