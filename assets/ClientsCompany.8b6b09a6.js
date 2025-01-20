@@ -1,1 +1,0 @@
-import{_ as e,Q as t,W as s,a1 as c}from"./index.faf33db7.js";const o={},a={class:"fill-height container"},n=c("div",{class:"title-3vw ptb-100 text-white"},"\u041A\u043B\u0438\u0435\u043D\u0442\u044B",-1),_=[n];function i(r,l){return t(),s("div",a,_)}var f=e(o,[["render",i]]);export{f as default};
